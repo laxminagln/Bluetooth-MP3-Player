@@ -1,0 +1,10 @@
+Android Phone(2.3 and above)
+ATSA music player, Arduino Time-and-Sensor-Based Android Music Player
+Arduino
+Bluetooth Module(HC-05)
+LDR(light-dependent resistor) sensor
+LM35 temperature sensor
+Bread board
+male-male connecting wires
+USB cable A-B
+Arduino IDE
