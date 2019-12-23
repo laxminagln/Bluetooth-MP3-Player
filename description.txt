@@ -1,0 +1,25 @@
+You will need your Arduino, bluetooth module, sensors, breadboard and wires here.
+1. First, prepare the materials.
+2. Know your pins. I'm using HC-05 bluetooth module in this prototype, any bluetooth 
+   module is compatible. You may refer to this page.
+3. After getting the right pins, power up the module by connecting 3.3V and ground 
+   to module's Vcc pin and ground pin respectively. Your Android phone only receives 
+   data, therefore we only need Tx pin of Arduino to Rx pin of module. Please follow 
+   the right voltage divider or you may see the magic white smoke appear ones. I use 
+   220 ohms and 1k ohms.
+4. After setting up the module, lets start with the sensors. You also need to learn 
+   the name of each pins for proper connection for LM35.
+5. Connect the signal pin of LM35 to A0 of Arduino. For LDR(light-dependent resistor), 
+   you don't need to worry about the pins, Drag 1k ohm resistor(brown black red) to 
+   ground and LDR one pin to the 1k ohm resistor, same pin of LDR where 1k ohm resistor 
+   connected,connect this node to A1 of Arduino and the other pin of LDR will be 5V. 
+   The circuit is on the picture.
+6. And now you're done. Plug the USB cable for programming the Arduino.
+
+Additional Notes
+1. You can not tap START button unless you are connected to a Bluetooth device.
+2. The App will hang and cause run-time error if no data is received.
+3. I haven't fix the bug where no songs on playlists and then you start playing the player. 
+   The app generates a random operation from 1 to maximum number of songs stored.
+4. Set your phone wake lock to maximum or else your music will stop playing. There is no 
+   function in app inventor that you can play song even if the screen is off.
